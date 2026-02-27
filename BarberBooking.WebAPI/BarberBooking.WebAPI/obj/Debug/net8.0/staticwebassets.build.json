@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "WEnPNZZDSO1DBj6Og651RU+90AZURfEKUaOH8lPQU0Q=",
+  "Source": "BarberBooking.WebAPI",
+  "BasePath": "_content/BarberBooking.WebAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

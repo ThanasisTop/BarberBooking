@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\BarberBooking.Application\BarberBooking.Application.csproj" />
+  </ItemGroup>
+
 </Project>

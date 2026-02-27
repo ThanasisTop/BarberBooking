@@ -1,0 +1,12 @@
+C:\MyProjects\BarberBooking\BarberBooking.WebAPI\BarberBooking.Core\bin\Debug\net8.0\BarberBooking.Core.deps.json
+C:\MyProjects\BarberBooking\BarberBooking.WebAPI\BarberBooking.Core\bin\Debug\net8.0\BarberBooking.Core.dll
+C:\MyProjects\BarberBooking\BarberBooking.WebAPI\BarberBooking.Core\bin\Debug\net8.0\BarberBooking.Core.pdb
+C:\MyProjects\BarberBooking\BarberBooking.WebAPI\BarberBooking.Core\obj\Debug\net8.0\BarberBooking.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\MyProjects\BarberBooking\BarberBooking.WebAPI\BarberBooking.Core\obj\Debug\net8.0\BarberBooking.Core.AssemblyInfoInputs.cache
+C:\MyProjects\BarberBooking\BarberBooking.WebAPI\BarberBooking.Core\obj\Debug\net8.0\BarberBooking.Core.AssemblyInfo.cs
+C:\MyProjects\BarberBooking\BarberBooking.WebAPI\BarberBooking.Core\obj\Debug\net8.0\BarberBooking.Core.csproj.CoreCompileInputs.cache
+C:\MyProjects\BarberBooking\BarberBooking.WebAPI\BarberBooking.Core\obj\Debug\net8.0\BarberBooking.Core.sourcelink.json
+C:\MyProjects\BarberBooking\BarberBooking.WebAPI\BarberBooking.Core\obj\Debug\net8.0\BarberBooking.Core.dll
+C:\MyProjects\BarberBooking\BarberBooking.WebAPI\BarberBooking.Core\obj\Debug\net8.0\refint\BarberBooking.Core.dll
+C:\MyProjects\BarberBooking\BarberBooking.WebAPI\BarberBooking.Core\obj\Debug\net8.0\BarberBooking.Core.pdb
+C:\MyProjects\BarberBooking\BarberBooking.WebAPI\BarberBooking.Core\obj\Debug\net8.0\ref\BarberBooking.Core.dll

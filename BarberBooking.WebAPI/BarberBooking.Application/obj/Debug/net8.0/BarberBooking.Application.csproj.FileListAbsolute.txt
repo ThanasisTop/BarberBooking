@@ -1,0 +1,16 @@
+C:\MyProjects\BarberBooking\BarberBooking.WebAPI\BarberBooking.Application\bin\Debug\net8.0\BarberBooking.Application.deps.json
+C:\MyProjects\BarberBooking\BarberBooking.WebAPI\BarberBooking.Application\bin\Debug\net8.0\BarberBooking.Application.dll
+C:\MyProjects\BarberBooking\BarberBooking.WebAPI\BarberBooking.Application\bin\Debug\net8.0\BarberBooking.Application.pdb
+C:\MyProjects\BarberBooking\BarberBooking.WebAPI\BarberBooking.Application\bin\Debug\net8.0\BarberBooking.Core.dll
+C:\MyProjects\BarberBooking\BarberBooking.WebAPI\BarberBooking.Application\bin\Debug\net8.0\BarberBooking.Core.pdb
+C:\MyProjects\BarberBooking\BarberBooking.WebAPI\BarberBooking.Application\obj\Debug\net8.0\BarberBooking.Application.csproj.AssemblyReference.cache
+C:\MyProjects\BarberBooking\BarberBooking.WebAPI\BarberBooking.Application\obj\Debug\net8.0\BarberBooking.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\MyProjects\BarberBooking\BarberBooking.WebAPI\BarberBooking.Application\obj\Debug\net8.0\BarberBooking.Application.AssemblyInfoInputs.cache
+C:\MyProjects\BarberBooking\BarberBooking.WebAPI\BarberBooking.Application\obj\Debug\net8.0\BarberBooking.Application.AssemblyInfo.cs
+C:\MyProjects\BarberBooking\BarberBooking.WebAPI\BarberBooking.Application\obj\Debug\net8.0\BarberBooking.Application.csproj.CoreCompileInputs.cache
+C:\MyProjects\BarberBooking\BarberBooking.WebAPI\BarberBooking.Application\obj\Debug\net8.0\BarberBooking.Application.sourcelink.json
+C:\MyProjects\BarberBooking\BarberBooking.WebAPI\BarberBooking.Application\obj\Debug\net8.0\BarberBo.C7F34A02.Up2Date
+C:\MyProjects\BarberBooking\BarberBooking.WebAPI\BarberBooking.Application\obj\Debug\net8.0\BarberBooking.Application.dll
+C:\MyProjects\BarberBooking\BarberBooking.WebAPI\BarberBooking.Application\obj\Debug\net8.0\refint\BarberBooking.Application.dll
+C:\MyProjects\BarberBooking\BarberBooking.WebAPI\BarberBooking.Application\obj\Debug\net8.0\BarberBooking.Application.pdb
+C:\MyProjects\BarberBooking\BarberBooking.WebAPI\BarberBooking.Application\obj\Debug\net8.0\ref\BarberBooking.Application.dll
