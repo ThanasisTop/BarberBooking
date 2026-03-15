@@ -16,3 +16,5 @@ C:\MyProjects\BarberBooking\BarberBooking.WebAPI\BarberBooking.Infrastructure\ob
 C:\MyProjects\BarberBooking\BarberBooking.WebAPI\BarberBooking.Infrastructure\obj\Debug\net8.0\refint\BarberBooking.Infrastructure.dll
 C:\MyProjects\BarberBooking\BarberBooking.WebAPI\BarberBooking.Infrastructure\obj\Debug\net8.0\BarberBooking.Infrastructure.pdb
 C:\MyProjects\BarberBooking\BarberBooking.WebAPI\BarberBooking.Infrastructure\obj\Debug\net8.0\ref\BarberBooking.Infrastructure.dll
+C:\MyProjects\BarberBooking\BarberBooking.WebAPI\BarberBooking.Infrastructure\bin\Debug\net8.0\BarberBooking.Infrastructure.runtimeconfig.json
+C:\MyProjects\BarberBooking\BarberBooking.WebAPI\BarberBooking.Infrastructure\obj\Debug\net8.0\BarberBooking.Infrastructure.genruntimeconfig.cache

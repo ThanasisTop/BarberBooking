@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="bookingApp">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Booking Form</title>
+
+  <!-- AngularJS from CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.3/angular.min.js"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet"/>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body ng-controller="BookingController as vm">
+
+  <!-- ══ Navigation ══ -->
+  <nav>
+    <a class="nav-brand" href="#">Reserv<span>io</span></a>
+    <ul class="nav-links">
+      <li><a href="../Dashboard/dashboard.html" class="btn-login">Dashboard</a></li>
+      <li><a href="#" class="btn-login">Login</a></li>
+    </ul>
+  </nav>
+
+  <!-- ══ Page Content ══ -->
+  <div class="page-wrapper">
+
+    <header class="page-header">
+      <h1>Make a <strong>Reservation</strong></h1>
+      <p>Fill in the details below and we'll confirm your booking shortly.</p>
+    </header>
+
+    <!-- ══ Glass Card ══ -->
+    <div class="glass-card">
+
+      <!-- SUCCESS STATE -->
+      <div class="success-banner" ng-if="vm.bookingSuccess">
+        <div class="success-icon">✅</div>
+        <h2>Booking Confirmed</h2>
+        <p>Thank you, <strong>{{vm.Booking.firstName}}</strong>! We'll be in touch at {{vm.Booking.email}}.</p>
+        <button class="btn-again" ng-click="vm.resetForm()">Book Again</button>
+      </div>
+      <!-- FAILURE STATE -->
+      <div class="success-banner" ng-if="vm.bookingSuccess==false">
+        <div class="success-icon">❌</div>
+        <h2>Booking Failed</h2>
+        <p>{{vm.errorMessage}}</p>
+        <button class="btn-again" ng-click="vm.resetForm()">Book Again</button>
+      </div>
+      <!-- FORM STATE -->
+      <form name="bookingForm" ng-if="!submitted" ng-submit="vm.submit(bookingForm)" novalidate>
+        <div class="form-grid">
+
+          <!-- Section: Personal -->
+          <div class="section-label">Personal Info</div>
+
+          <!-- First Name -->
+          <div class="field">
+            <label for="firstName">First Name</label>
+            <input
+              id="firstName"
+              type="text"
+              name="firstName"
+              placeholder="Jane"
+              ng-model="vm.Booking.firstName"
+              ng-change="vm.trackEntityChanges(vm.Booking)"
+              required
+            />
+            <span class="err-msg" ng-if="bookingForm.firstName.$touched && bookingForm.firstName.$error.required">
+              First name is required.
+            </span>
+          </div>
+
+          <!-- Last Name -->
+          <div class="field">
+            <label for="lastName">Last Name</label>
+            <input
+              id="lastName"
+              type="text"
+              name="lastName"
+              placeholder="Doe"
+              ng-model="vm.Booking.lastName"
+              ng-change="vm.trackEntityChanges(vm.Booking)"
+              required
+            />
+            <span class="err-msg" ng-if="bookingForm.lastName.$touched && bookingForm.lastName.$error.required">
+              Last name is required.
+            </span>
+          </div>
+
+          <!-- Phone -->
+          <div class="field">
+            <label for="phone">Phone</label>
+            <input
+              id="phone"
+              type="tel"
+              name="phone"
+              placeholder="+30 69XXXXXXXX"
+              ng-model="vm.Booking.phone"
+              ng-change="vm.trackEntityChanges(vm.Booking)"
+              required
+              ng-pattern="/^[+]?[\d\s\-()]{7,20}$/"
+            />
+            <span class="err-msg" ng-if="bookingForm.phone.$touched && bookingForm.phone.$error.required">Phone is required.</span>
+            <span class="err-msg" ng-if="bookingForm.phone.$touched && bookingForm.phone.$error.pattern">Enter a valid phone number.</span>
+          </div>
+
+          <!-- Email -->
+          <div class="field">
+            <label for="email">Email</label>
+            <input
+              id="email"
+              type="email"
+              name="email"
+              placeholder="jane@example.com"
+              ng-model="vm.Booking.email"
+              ng-change="vm.trackEntityChanges(vm.Booking)"
+              required
+            />
+            <span class="err-msg" ng-if="bookingForm.email.$touched && bookingForm.email.$error.required">Email is required.</span>
+            <span class="err-msg" ng-if="bookingForm.email.$touched && bookingForm.email.$error.email">Enter a valid email.</span>
+          </div>
+
+          <!-- Divider -->
+          <div class="form-divider"></div>
+          <div class="section-label">Booking Details</div>
+
+          <!-- Date -->
+          <div class="field">
+            <label for="bookingDate">Date</label>
+            <div class="select-wrapper">
+              <input type="date" 
+                id="bookingDate"
+                name="bookingDate"
+                ng-model="vm.Booking.bookingDate"
+                ng-change="vm.trackEntityChanges(vm.Booking)"
+                required>
+            </div>
+            <span class="err-msg" ng-if="bookingForm.persons.$touched && bookingForm.persons.$error.required">
+              Please select a barber.
+            </span>
+          </div>
+
+          <!-- Time -->
+          <div class="field">
+            <label for="time">Time Slot</label>
+            <div class="select-wrapper">
+              <select
+                id="time"
+                name="time"
+                ng-model="vm.Booking.time"
+                ng-change="vm.trackEntityChanges(vm.Booking)"
+                required
+              >
+                <option value="" disabled selected>Pick a time</option>
+                <option ng-repeat="slot in timeSlots" value="{{slot}}">{{slot}}</option>
+              </select>
+            </div>
+            <span class="err-msg" ng-if="bookingForm.time.$touched && bookingForm.time.$error.required">
+              Please select a time slot.
+            </span>
+          </div>
+
+          <!-- Persons -->
+          <div class="field">
+            <label for="persons">Barber</label>
+            <div class="select-wrapper">
+              <select
+                id="persons"
+                name="persons"
+                ng-model="vm.Booking.personId"
+                ng-change="vm.trackEntityChanges(vm.Booking)"
+                required>
+                <option value="" disabled selected>Select barber</option>
+                <option ng-repeat="person in vm.Persons" value="{{person.id}}">{{person.firstName}} {{person.lastName}}</option>
+              </select>
+            </div>
+            <span class="err-msg" ng-if="bookingForm.persons.$touched && bookingForm.persons.$error.required">
+              Please select a barber.
+            </span>
+          </div>
+
+          <!-- Service -->
+          <div class="field">
+            <label for="service">Service</label>
+            <div class="select-wrapper">
+              <select
+                id="service"
+                name="service"
+                ng-model="vm.Booking.service"
+                ng-change="vm.trackEntityChanges(vm.Booking)"
+                required
+              >
+                <option value="" disabled selected>Choose a service</option>
+                <option ng-repeat="svc in services" value="{{svc}}">{{svc}}</option>
+              </select>
+            </div>
+            <span class="err-msg" ng-if="bookingForm.service.$touched && bookingForm.service.$error.required">
+              Please choose a service.
+            </span>
+          </div>
+
+        </div><!-- /form-grid -->
+
+        <button
+          type="submit"
+          class="btn-submit"
+          ng-disabled="bookingForm.$invalid">
+          Confirm Booking
+        </button>
+
+      </form>
+
+    </div><!-- /glass-card -->
+
+  </div><!-- /page-wrapper -->
+
+  <!-- ══ AngularJS App ══ -->
+  <script src="BookingFormController.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,6 @@
+wwwroot\AngularApp\Booking\bookingForm.html
+wwwroot\AngularApp\Booking\BookingFormController.js
+wwwroot\AngularApp\Booking\style.css
+wwwroot\AngularApp\Dashboard\dashboard.html
+wwwroot\AngularApp\Dashboard\DashboardController.js
+wwwroot\AngularApp\Dashboard\dashboard-style.css

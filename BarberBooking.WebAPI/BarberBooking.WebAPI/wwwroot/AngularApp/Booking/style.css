@@ -1,0 +1,348 @@
+
+    /* ── CSS Variables ── */
+    :root {
+      --glass-bg:      rgba(23, 197, 239, 0.2);
+      --glass-border:  rgba(23, 197, 239, 0.3);
+      --glass-shadow:  0 4px 30px rgba(0, 0, 0, 0.1);
+      --glass-blur:    blur(5px);
+      --accent:        #17c5ef;
+      --accent-dark:   #0ea3c8;
+      --text-main:     #e8f8fd;
+      --text-muted:    rgba(232, 248, 253, 0.6);
+      --input-bg:      rgba(23, 197, 239, 0.08);
+      --input-border:  rgba(23, 197, 239, 0.25);
+      --nav-bg:        rgba(5, 30, 40, 0.55);
+      --error:         #ff6b8a;
+    }
+
+    /* ── Reset & Base ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      min-height: 100vh;
+      font-family: 'Jost', sans-serif;
+      font-weight: 300;
+      color: var(--text-main);
+      background:
+        radial-gradient(ellipse at 20% 10%,  rgba(23, 197, 239, 0.28) 0%, transparent 55%),
+        radial-gradient(ellipse at 80% 85%,  rgba(0,  90, 180, 0.35)  0%, transparent 55%),
+        radial-gradient(ellipse at 55% 45%,  rgba(5,  15,  35, 0.9)   0%, transparent 80%),
+        linear-gradient(160deg, #020c18 0%, #041828 50%, #020c18 100%);
+      background-attachment: fixed;
+      overflow-x: hidden;
+    }
+
+    /* Ambient animated orbs */
+    body::before, body::after {
+      content: '';
+      position: fixed;
+      border-radius: 50%;
+      filter: blur(80px);
+      pointer-events: none;
+      z-index: 0;
+    }
+    body::before {
+      width: 420px; height: 420px;
+      top: -100px; left: -100px;
+      background: rgba(23, 197, 239, 0.12);
+      animation: orb1 14s ease-in-out infinite alternate;
+    }
+    body::after {
+      width: 360px; height: 360px;
+      bottom: -80px; right: -80px;
+      background: rgba(0, 80, 200, 0.14);
+      animation: orb2 18s ease-in-out infinite alternate;
+    }
+    @keyframes orb1 { from { transform: translate(0,0) scale(1); } to { transform: translate(60px, 80px) scale(1.15); } }
+    @keyframes orb2 { from { transform: translate(0,0) scale(1); } to { transform: translate(-50px,-70px) scale(1.2); } }
+
+    /* ── Navigation ── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--nav-bg);
+      backdrop-filter: var(--glass-blur);
+      -webkit-backdrop-filter: var(--glass-blur);
+      border-bottom: 1px solid var(--glass-border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 2.5rem;
+      height: 64px;
+    }
+
+    .nav-brand {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.65rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      color: var(--accent);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .nav-brand span { color: var(--text-main); font-weight: 300; }
+
+    .nav-links {
+      display: flex;
+      gap: 0.5rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      display: inline-block;
+      padding: 0.45rem 1.25rem;
+      text-decoration: none;
+      font-size: 0.88rem;
+      font-weight: 400;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      border-radius: 8px;
+      border: 1px solid transparent;
+      transition: all 0.28s ease;
+    }
+    .nav-links a:hover {
+      color: var(--text-main);
+      background: var(--glass-bg);
+      border-color: var(--glass-border);
+    }
+    .nav-links a.active {
+      color: var(--accent);
+      background: rgba(23, 197, 239, 0.12);
+      border-color: rgba(23, 197, 239, 0.35);
+    }
+    .nav-links .btn-login {
+      background: rgba(23, 197, 239, 0.18);
+      border-color: var(--glass-border);
+      color: var(--accent);
+    }
+    .nav-links .btn-login:hover {
+      background: rgba(23, 197, 239, 0.32);
+      border-color: var(--accent);
+      color: #fff;
+    }
+
+    /* ── Page Layout ── */
+    .page-wrapper {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 4rem 1.5rem 5rem;
+    }
+
+    .page-header {
+      text-align: center;
+      margin-bottom: 2.8rem;
+      animation: fadeDown 0.7s ease both;
+    }
+    .page-header h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2.2rem, 5vw, 3.4rem);
+      font-weight: 300;
+      letter-spacing: 0.03em;
+      line-height: 1.1;
+    }
+    .page-header h1 strong {
+      color: var(--accent);
+      font-weight: 600;
+    }
+    .page-header p {
+      margin-top: 0.75rem;
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      letter-spacing: 0.04em;
+    }
+
+    /* ── Glass Card ── */
+    .glass-card {
+      width: 100%;
+      max-width: 660px;
+      background: var(--glass-bg);
+      border-radius: 20px;
+      box-shadow: var(--glass-shadow), inset 0 1px 0 rgba(255,255,255,0.07);
+      backdrop-filter: var(--glass-blur);
+      -webkit-backdrop-filter: var(--glass-blur);
+      border: 1px solid var(--glass-border);
+      padding: 2.8rem 2.6rem;
+      animation: fadeUp 0.7s 0.15s ease both;
+    }
+
+    /* ── Form Grid ── */
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.35rem 1.5rem;
+    }
+    .form-grid .full { grid-column: 1 / -1; }
+
+    /* ── Field Group ── */
+    .field {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+
+    label {
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      transition: color 0.2s;
+    }
+    .field:focus-within label { color: var(--accent); }
+
+    input, select {
+      width: 100%;
+      padding: 0.72rem 1rem;
+      font-family: 'Jost', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 300;
+      color: var(--text-main);
+      background: var(--input-bg);
+      border: 1px solid var(--input-border);
+      border-radius: 10px;
+      outline: none;
+      transition: border-color 0.25s, background 0.25s, box-shadow 0.25s;
+      -webkit-appearance: none;
+      appearance: none;
+    }
+    input::placeholder { color: var(--text-muted); }
+
+    input:focus, select:focus {
+      border-color: var(--accent);
+      background: rgba(23, 197, 239, 0.13);
+      box-shadow: 0 0 0 3px rgba(23, 197, 239, 0.14);
+    }
+
+    /* Custom select arrow */
+    .select-wrapper {
+      position: relative;
+    }
+    .select-wrapper::after {
+      content: '';
+      position: absolute;
+      right: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 0; height: 0;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-top: 6px solid var(--accent);
+      pointer-events: none;
+    }
+    .select-wrapper select { padding-right: 2.5rem; cursor: pointer; }
+
+    /* select option colours */
+    select option { background: #062030; color: var(--text-main); }
+
+    /* ── Validation ── */
+    .err-msg {
+      font-size: 0.72rem;
+      color: var(--error);
+      letter-spacing: 0.04em;
+      min-height: 1em;
+    }
+
+    input.ng-invalid.ng-touched,
+    select.ng-invalid.ng-touched {
+      border-color: var(--error);
+      box-shadow: 0 0 0 3px rgba(255,107,138,0.12);
+    }
+
+    /* ── Submit Button ── */
+    .btn-submit {
+      margin-top: 2rem;
+      width: 100%;
+      padding: 0.9rem 1.5rem;
+      font-family: 'Jost', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #fff;
+      background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      box-shadow: 0 4px 20px rgba(23, 197, 239, 0.3);
+      transition: transform 0.2s, box-shadow 0.2s, filter 0.2s;
+    }
+    .btn-submit:hover:not(:disabled) {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 28px rgba(23, 197, 239, 0.42);
+      filter: brightness(1.08);
+    }
+    .btn-submit:active:not(:disabled) { transform: translateY(0); }
+    .btn-submit:disabled {
+      opacity: 0.45;
+      cursor: not-allowed;
+    }
+
+    /* ── Success Banner ── */
+    .success-banner {
+      text-align: center;
+      padding: 2.5rem 1rem;
+      animation: fadeUp 0.5s ease both;
+    }
+    .success-icon {
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+    }
+    .success-banner h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2rem;
+      font-weight: 400;
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+    }
+    .success-banner p { color: var(--text-muted); font-size: 0.95rem; }
+    .btn-again {
+      margin-top: 1.5rem;
+      display: inline-block;
+      padding: 0.6rem 1.8rem;
+      border: 1px solid var(--glass-border);
+      border-radius: 8px;
+      color: var(--accent);
+      background: rgba(23,197,239,0.1);
+      cursor: pointer;
+      font-family: 'Jost', sans-serif;
+      font-size: 0.88rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      transition: background 0.25s, border-color 0.25s;
+    }
+    .btn-again:hover { background: rgba(23,197,239,0.22); border-color: var(--accent); }
+
+    /* ── Divider ── */
+    .form-divider {
+      grid-column: 1 / -1;
+      height: 1px;
+      background: var(--glass-border);
+      margin: 0.3rem 0;
+    }
+    .section-label {
+      grid-column: 1 / -1;
+      font-size: 0.72rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-weight: 500;
+    }
+
+    /* ── Keyframes ── */
+    @keyframes fadeDown { from { opacity:0; transform:translateY(-18px); } to { opacity:1; transform:none; } }
+    @keyframes fadeUp   { from { opacity:0; transform:translateY(22px);  } to { opacity:1; transform:none; } }
+
+    /* ── Responsive ── */
+    @media (max-width: 560px) {
+      .form-grid { grid-template-columns: 1fr; }
+      .form-grid .full { grid-column: 1; }
+      .glass-card { padding: 2rem 1.3rem; }
+      nav { padding: 0 1.2rem; }
+    }

@@ -1,0 +1,49 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\MyProjects\\BarberBooking\\BarberBooking.WebAPI\\BarberBooking.WebAPI\\wwwroot\\AngularApp\\Booking\\BookingFormController.js",
+      "PackagePath": "staticwebassets\\AngularApp\\Booking\\BookingFormController.js"
+    },
+    {
+      "Id": "C:\\MyProjects\\BarberBooking\\BarberBooking.WebAPI\\BarberBooking.WebAPI\\wwwroot\\AngularApp\\Booking\\bookingForm.html",
+      "PackagePath": "staticwebassets\\AngularApp\\Booking\\bookingForm.html"
+    },
+    {
+      "Id": "C:\\MyProjects\\BarberBooking\\BarberBooking.WebAPI\\BarberBooking.WebAPI\\wwwroot\\AngularApp\\Booking\\style.css",
+      "PackagePath": "staticwebassets\\AngularApp\\Booking\\style.css"
+    },
+    {
+      "Id": "C:\\MyProjects\\BarberBooking\\BarberBooking.WebAPI\\BarberBooking.WebAPI\\wwwroot\\AngularApp\\Dashboard\\DashboardController.js",
+      "PackagePath": "staticwebassets\\AngularApp\\Dashboard\\DashboardController.js"
+    },
+    {
+      "Id": "C:\\MyProjects\\BarberBooking\\BarberBooking.WebAPI\\BarberBooking.WebAPI\\wwwroot\\AngularApp\\Dashboard\\dashboard-style.css",
+      "PackagePath": "staticwebassets\\AngularApp\\Dashboard\\dashboard-style.css"
+    },
+    {
+      "Id": "C:\\MyProjects\\BarberBooking\\BarberBooking.WebAPI\\BarberBooking.WebAPI\\wwwroot\\AngularApp\\Dashboard\\dashboard.html",
+      "PackagePath": "staticwebassets\\AngularApp\\Dashboard\\dashboard.html"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.BarberBooking.WebAPI.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.BarberBooking.WebAPI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.BarberBooking.WebAPI.props",
+      "PackagePath": "build\\BarberBooking.WebAPI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.BarberBooking.WebAPI.props",
+      "PackagePath": "buildMultiTargeting\\BarberBooking.WebAPI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.BarberBooking.WebAPI.props",
+      "PackagePath": "buildTransitive\\BarberBooking.WebAPI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
