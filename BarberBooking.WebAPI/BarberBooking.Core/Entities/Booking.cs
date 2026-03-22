@@ -1,4 +1,5 @@
-﻿using System.Text.Json.Serialization;
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 
 namespace BarberBooking.Core.Entities
 {
@@ -17,6 +18,12 @@ namespace BarberBooking.Core.Entities
 
         public string? Phone { get; set; }
         public string? Status { get; set; }
+
+        [NotMapped]
+        public int TotalBookings { get; set; }
+
+        [NotMapped]
+        public IEnumerable<Booking>? PagedBookings { get; set; }
 
         [JsonIgnore]
         public Person? Person { get; set; }

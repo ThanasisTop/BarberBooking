@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace BarberBooking.Infrastructure.Repositories
 {
-    public class GenericRepository<T> : IGenericRepository<T> where T : class
+    public class GenericRepository<T> : IGenericRepository<T> where T : EntityBase
     {
         public readonly AppDbContext _context;
         public GenericRepository(AppDbContext context) {
@@ -19,6 +19,9 @@ namespace BarberBooking.Infrastructure.Repositories
         }
         public async Task<T> AddAsync(T entity)
         {
+            entity.DateCreated = DateTime.UtcNow;
+            entity.DateModified = DateTime.UtcNow;
+
             await _context.Set<T>().AddAsync(entity);
             await _context.SaveChangesAsync();
 
@@ -44,6 +47,7 @@ namespace BarberBooking.Infrastructure.Repositories
 
         public async Task<T> UpdateAsync(T entity)
         {
+            entity.DateModified = DateTime.UtcNow;
             _context.Set<T>().Update(entity);
             await _context.SaveChangesAsync();
             return entity;

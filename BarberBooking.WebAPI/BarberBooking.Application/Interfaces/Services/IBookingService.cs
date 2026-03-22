@@ -1,10 +1,5 @@
 ﻿using BarberBooking.Core.Entities;
 using BarberBooking.Core.Entities.Common;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BarberBooking.Application.Interfaces.Services
 {
@@ -17,5 +12,7 @@ namespace BarberBooking.Application.Interfaces.Services
         Task<Result<Booking>> UpdateBookingAsync(Booking booking);
 
         Task<Result<Booking>> GetBookingByIdAsync(Guid id);
+
+        Task<Result<Booking>> GetPagedBookingsAsync(int pageNumber, int pageSize);
     }
 }

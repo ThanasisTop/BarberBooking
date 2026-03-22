@@ -1,0 +1,379 @@
+
+    /* ── CSS Variables ── */
+    :root {
+      --glass-bg:      rgba(23, 197, 239, 0.2);
+      --glass-border:  rgba(23, 197, 239, 0.3);
+      --glass-shadow:  0 4px 30px rgba(0, 0, 0, 0.1);
+      --glass-blur:    blur(5px);
+      --accent:        #17c5ef;
+      --accent-dark:   #0ea3c8;
+      --text-main:     #e8f8fd;
+      --text-muted:    rgba(232, 248, 253, 0.6);
+      --input-bg:      rgba(23, 197, 239, 0.08);
+      --input-border:  rgba(23, 197, 239, 0.25);
+      --nav-bg:        rgba(5, 30, 40, 0.55);
+      --error:         #ff6b8a;
+    }
+
+    /* ── Reset & Base ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      min-height: 100vh;
+      font-family: 'Jost', sans-serif;
+      font-weight: 300;
+      color: var(--text-main);
+      background:
+        radial-gradient(ellipse at 20% 10%,  rgba(23, 197, 239, 0.28) 0%, transparent 55%),
+        radial-gradient(ellipse at 80% 85%,  rgba(0,  90, 180, 0.35)  0%, transparent 55%),
+        radial-gradient(ellipse at 55% 45%,  rgba(5,  15,  35, 0.9)   0%, transparent 80%),
+        linear-gradient(160deg, #020c18 0%, #041828 50%, #020c18 100%);
+      background-attachment: fixed;
+      overflow-x: hidden;
+    }
+
+    /* Ambient animated orbs */
+    body::before, body::after {
+      content: '';
+      position: fixed;
+      border-radius: 50%;
+      filter: blur(80px);
+      pointer-events: none;
+      z-index: 0;
+    }
+    body::before {
+      width: 420px; height: 420px;
+      top: -100px; left: -100px;
+      background: rgba(23, 197, 239, 0.12);
+      animation: orb1 14s ease-in-out infinite alternate;
+    }
+    body::after {
+      width: 360px; height: 360px;
+      bottom: -80px; right: -80px;
+      background: rgba(0, 80, 200, 0.14);
+      animation: orb2 18s ease-in-out infinite alternate;
+    }
+    @keyframes orb1 { from { transform: translate(0,0) scale(1); } to { transform: translate(60px, 80px) scale(1.15); } }
+    @keyframes orb2 { from { transform: translate(0,0) scale(1); } to { transform: translate(-50px,-70px) scale(1.2); } }
+
+    /* ── Navigation ── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--nav-bg);
+      backdrop-filter: var(--glass-blur);
+      -webkit-backdrop-filter: var(--glass-blur);
+      border-bottom: 1px solid var(--glass-border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 2.5rem;
+      height: 64px;
+      animation: fadeDown 0.6s ease both;
+    }
+
+    .nav-brand {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.65rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      color: var(--accent);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .nav-brand span { color: var(--text-main); font-weight: 300; }
+
+    .nav-links {
+      display: flex;
+      gap: 0.5rem;
+      list-style: none;
+    }
+    .nav-links a {
+      display: inline-block;
+      padding: 0.45rem 1.25rem;
+      text-decoration: none;
+      font-size: 0.88rem;
+      font-weight: 400;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      border-radius: 8px;
+      border: 1px solid transparent;
+      transition: all 0.28s ease;
+    }
+    .nav-links a:hover {
+      color: var(--text-main);
+      background: var(--glass-bg);
+      border-color: var(--glass-border);
+    }
+
+    /* ── Page Layout ── */
+    .page-wrapper {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: calc(100vh - 64px);
+      padding: 3rem 1.5rem 4rem;
+    }
+
+    /* ── Page Header ── */
+    .page-header {
+      text-align: center;
+      margin-bottom: 2.4rem;
+      animation: fadeUp 0.7s 0.1s ease both;
+    }
+    .page-header h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2.2rem, 5vw, 3.2rem);
+      font-weight: 300;
+      letter-spacing: 0.03em;
+      line-height: 1.1;
+    }
+    .page-header h1 strong {
+      color: var(--accent);
+      font-weight: 600;
+    }
+    .page-header p {
+      margin-top: 0.6rem;
+      font-size: 0.93rem;
+      color: var(--text-muted);
+      letter-spacing: 0.05em;
+    }
+
+    /* ── Glass Card ── */
+    .glass-card {
+      width: 100%;
+      max-width: 460px;
+      background: var(--glass-bg);
+      border-radius: 20px;
+      box-shadow: var(--glass-shadow), inset 0 1px 0 rgba(255,255,255,0.07);
+      backdrop-filter: var(--glass-blur);
+      -webkit-backdrop-filter: var(--glass-blur);
+      border: 1px solid var(--glass-border);
+      padding: 2.8rem 2.6rem 2.4rem;
+      animation: fadeUp 0.75s 0.25s ease both;
+    }
+
+    /* ── Form Fields ── */
+    .form-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 1.3rem;
+    }
+
+    .field {
+      display: flex;
+      flex-direction: column;
+      gap: 0.42rem;
+    }
+
+    label {
+      font-size: 0.74rem;
+      font-weight: 500;
+      letter-spacing: 0.11em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      transition: color 0.2s;
+    }
+    .field:focus-within label { color: var(--accent); }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 0.78rem 1rem;
+      font-family: 'Jost', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 300;
+      color: var(--text-main);
+      background: var(--input-bg);
+      border: 1px solid var(--input-border);
+      border-radius: 10px;
+      outline: none;
+      transition: border-color 0.25s, background 0.25s, box-shadow 0.25s;
+      -webkit-appearance: none;
+      appearance: none;
+    }
+    input::placeholder { color: var(--text-muted); }
+    input:focus {
+      border-color: var(--accent);
+      background: rgba(23, 197, 239, 0.13);
+      box-shadow: 0 0 0 3px rgba(23, 197, 239, 0.14);
+    }
+    input.ng-invalid.ng-touched {
+      border-color: var(--error);
+      box-shadow: 0 0 0 3px rgba(255,107,138,0.12);
+    }
+
+    /* ── Error Message ── */
+    .err-msg {
+      font-size: 0.72rem;
+      color: var(--error);
+      letter-spacing: 0.04em;
+      min-height: 1em;
+    }
+
+    /* ── Remember Me ── */
+    .remember-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 0.1rem;
+    }
+
+    .checkbox-label {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      cursor: pointer;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      letter-spacing: 0.04em;
+      transition: color 0.2s;
+      user-select: none;
+    }
+    .checkbox-label:hover { color: var(--text-main); }
+
+    /* Hidden native checkbox */
+    .checkbox-label input[type="checkbox"] {
+      display: none;
+    }
+
+    /* Custom checkbox box */
+    .custom-check {
+      width: 18px;
+      height: 18px;
+      min-width: 18px;
+      border-radius: 5px;
+      border: 1px solid var(--input-border);
+      background: var(--input-bg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: border-color 0.2s, background 0.2s, box-shadow 0.2s;
+    }
+    .checkbox-label input[type="checkbox"]:checked + .custom-check {
+      background: rgba(23, 197, 239, 0.25);
+      border-color: var(--accent);
+      box-shadow: 0 0 0 2px rgba(23, 197, 239, 0.15);
+    }
+    .check-icon {
+      opacity: 0;
+      transform: scale(0.4);
+      transition: opacity 0.18s ease, transform 0.18s ease;
+    }
+    .checkbox-label input[type="checkbox"]:checked + .custom-check .check-icon {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    .forgot-link {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      text-decoration: none;
+      letter-spacing: 0.05em;
+      transition: color 0.2s;
+    }
+    .forgot-link:hover { color: var(--accent); }
+
+    /* ── Submit Button ── */
+    .btn-submit {
+      margin-top: 1.6rem;
+      width: 100%;
+      padding: 0.9rem 1.5rem;
+      font-family: 'Jost', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #fff;
+      background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      box-shadow: 0 4px 20px rgba(23, 197, 239, 0.3);
+      transition: transform 0.2s, box-shadow 0.2s, filter 0.2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.7rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .btn-submit:hover:not(:disabled) {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 28px rgba(23, 197, 239, 0.42);
+      filter: brightness(1.08);
+    }
+    .btn-submit:active:not(:disabled) { transform: translateY(0); }
+    .btn-submit:disabled {
+      opacity: 0.55;
+      cursor: not-allowed;
+    }
+
+    /* ── Spinner ── */
+    .spinner {
+      width: 18px;
+      height: 18px;
+      border: 2px solid rgba(255,255,255,0.35);
+      border-top-color: #fff;
+      border-radius: 50%;
+      animation: spin 0.7s linear infinite;
+      flex-shrink: 0;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* ── Divider ── */
+    .card-footer {
+      margin-top: 1.8rem;
+      text-align: center;
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      letter-spacing: 0.04em;
+    }
+    .card-footer a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 400;
+      transition: opacity 0.2s;
+    }
+    .card-footer a:hover { opacity: 0.75; }
+
+    /* Horizontal rule */
+    .card-divider {
+      height: 1px;
+      background: var(--glass-border);
+      margin: 2rem 0 1.5rem;
+    }
+
+    /* ── Global Error Banner ── */
+    .alert-error {
+      background: rgba(255, 107, 138, 0.12);
+      border: 1px solid rgba(255, 107, 138, 0.35);
+      border-radius: 10px;
+      padding: 0.75rem 1rem;
+      font-size: 0.85rem;
+      color: var(--error);
+      letter-spacing: 0.03em;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      animation: fadeUp 0.3s ease both;
+    }
+
+    /* ── Keyframes ── */
+    @keyframes fadeDown { from { opacity:0; transform:translateY(-18px); } to { opacity:1; transform:none; } }
+    @keyframes fadeUp   { from { opacity:0; transform:translateY(22px);  } to { opacity:1; transform:none; } }
+
+    /* ── Responsive ── */
+    @media (max-width: 520px) {
+      .glass-card { padding: 2rem 1.4rem; }
+      nav { padding: 0 1.2rem; }
+      .nav-links { display: none; }
+    }
+  

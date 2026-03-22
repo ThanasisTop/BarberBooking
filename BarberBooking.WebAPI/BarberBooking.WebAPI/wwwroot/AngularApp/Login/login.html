@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="reservApp">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reserv.io — Sign In</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.3/angular.min.js"></script>
+  <link rel="stylesheet" href="login-style.css">
+</head>
+
+<body ng-controller="LoginController as vm">
+
+  <!-- Navigation -->
+  <nav>
+    <a href="./booking-form.html" class="nav-brand">Reserv<span>.io</span></a>
+    <!--<ul class="nav-links">
+      <li><a href="#">About</a></li>
+      <li><a href="#">Features</a></li>
+      <li><a href="#">Pricing</a></li>
+    </ul>-->
+  </nav>
+
+  <!-- Page -->
+  <div class="page-wrapper">
+
+    <div class="page-header">
+      <h1>Welcome back to <strong>Reserv.io</strong></h1>
+      <p>Sign in to manage your reservations</p>
+    </div>
+
+    <div class="glass-card">
+
+      <!-- Global API error -->
+      <div class="alert-error" ng-if="vm.serverError">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/>
+        </svg>
+        {{ vm.serverError }}
+      </div>
+
+      <div class="form-grid" ng-style="vm.serverError ? {'margin-top':'1.2rem'} : {}">
+
+        <!-- Username -->
+        <div class="field">
+          <label for="username">Username</label>
+          <input
+            id="username"
+            type="text"
+            name="username"
+            ng-model="vm.credentials.username"
+            placeholder="your@email.com"
+            ng-class="{'ng-invalid ng-touched': vm.submitted && !vm.credentials.username}"
+            autocomplete="username"
+          />
+          <span class="err-msg" ng-if="vm.submitted && !vm.credentials.username">
+            Username is required.
+          </span>
+        </div>
+
+        <!-- Password -->
+        <div class="field">
+          <label for="password">Password</label>
+          <input
+            id="password"
+            type="password"
+            name="password"
+            ng-model="vm.credentials.password"
+            placeholder="••••••••"
+            ng-class="{'ng-invalid ng-touched': vm.submitted && !vm.credentials.password}"
+            autocomplete="current-password"
+          />
+          <span class="err-msg" ng-if="vm.submitted && !vm.credentials.password">
+            Password is required.
+          </span>
+        </div>
+
+        <!-- Remember Me + Forgot -->
+        <div class="remember-row">
+          <label class="checkbox-label">
+            <input type="checkbox" ng-model="vm.rememberMe" />
+            <span class="custom-check">
+              <svg class="check-icon" width="11" height="11" viewBox="0 0 12 12" fill="none">
+                <polyline points="2,6 5,9 10,3" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            Remember me
+          </label>
+          <a href="#" class="forgot-link">Forgot password?</a>
+        </div>
+
+      </div>
+
+      <!-- Submit -->
+      <button
+        class="btn-submit"
+        ng-click="vm.login()"
+        ng-disabled="vm.loading"
+      >
+        <span class="spinner" ng-if="vm.loading"></span>
+        <span>{{ vm.loading ? 'Signing in…' : 'Log In' }}</span>
+      </button>
+
+      <div class="card-divider"></div>
+
+      <div class="card-footer">
+        Don't have an account? &nbsp;<a href="#">Create one free</a>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="LoginController.js"></script>
+
+</body>
+</html>

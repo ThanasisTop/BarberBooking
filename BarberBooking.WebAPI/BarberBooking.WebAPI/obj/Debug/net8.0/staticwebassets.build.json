@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/t6PjBbjI7aw9n/jY3Y1bKuYo3Msic1BdzbdhWYJXm0=",
+  "Hash": "Wij0use3ljtX7+Mr/Mod/zZcByssHge3UtftP6RcNkA=",
   "Source": "BarberBooking.WebAPI",
   "BasePath": "_content/BarberBooking.WebAPI",
   "Mode": "Default",
@@ -31,8 +31,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "swep6opz08",
-      "Integrity": "vI1m9QDv704yM0Z/OHB+uYyYUMatIzAld53/d8tcSag=",
+      "Fingerprint": "ick30dsp4p",
+      "Integrity": "PiJRhQdx4VG3ux1PjAEBdN+f1v/sHDk5ObIDRjnEzGo=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\AngularApp\\Booking\\bookingForm.html"
@@ -94,8 +94,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "4ud818q0b7",
-      "Integrity": "DFkz/Umz2p1V6bTgHp6gpL8GM7ebjM3m1cUumSETDC4=",
+      "Fingerprint": "rng785dmx1",
+      "Integrity": "6SN2fPPfGPWvn9uzTpbtkWQ1+wOGJHIYuE6JfsHKPFA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\AngularApp\\Dashboard\\dashboard.html"
@@ -115,8 +115,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "09s2ubthv8",
-      "Integrity": "fApCbE8MgI6+xkYTD4jjxDPMMsMRHSxDX0zp9RKn3GY=",
+      "Fingerprint": "323mhj772t",
+      "Integrity": "BToPbS4L8n6+LTfltrlc39XiyQ+KmWaZ0SD9tqWnSn0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\AngularApp\\Dashboard\\DashboardController.js"
@@ -141,6 +141,69 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\AngularApp\\Dashboard\\dashboard-style.css"
+    },
+    {
+      "Identity": "C:\\MyProjects\\BarberBooking\\BarberBooking.WebAPI\\BarberBooking.WebAPI\\wwwroot\\AngularApp\\Login\\login.html",
+      "SourceId": "BarberBooking.WebAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\MyProjects\\BarberBooking\\BarberBooking.WebAPI\\BarberBooking.WebAPI\\wwwroot\\",
+      "BasePath": "_content/BarberBooking.WebAPI",
+      "RelativePath": "AngularApp/Login/login#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "m8yvb6prtr",
+      "Integrity": "FtLSwigCpd49W+I8mUDgssg6+d5ZjpFmzrv8lBnUNX8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\AngularApp\\Login\\login.html"
+    },
+    {
+      "Identity": "C:\\MyProjects\\BarberBooking\\BarberBooking.WebAPI\\BarberBooking.WebAPI\\wwwroot\\AngularApp\\Login\\LoginController.js",
+      "SourceId": "BarberBooking.WebAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\MyProjects\\BarberBooking\\BarberBooking.WebAPI\\BarberBooking.WebAPI\\wwwroot\\",
+      "BasePath": "_content/BarberBooking.WebAPI",
+      "RelativePath": "AngularApp/Login/LoginController#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "gps3iv5rcz",
+      "Integrity": "7A2ib/MCpp2zN0RxzcQ6OVthrqXQhpY1P+8nO9g0VwY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\AngularApp\\Login\\LoginController.js"
+    },
+    {
+      "Identity": "C:\\MyProjects\\BarberBooking\\BarberBooking.WebAPI\\BarberBooking.WebAPI\\wwwroot\\AngularApp\\Login\\login-style.css",
+      "SourceId": "BarberBooking.WebAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\MyProjects\\BarberBooking\\BarberBooking.WebAPI\\BarberBooking.WebAPI\\wwwroot\\",
+      "BasePath": "_content/BarberBooking.WebAPI",
+      "RelativePath": "AngularApp/Login/login-style#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "9pk0042l0p",
+      "Integrity": "M6dnMhUoWXCXTlpTOJ6bmfYrNSCOLz945hcrHupb3N8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\AngularApp\\Login\\login-style.css"
     }
   ],
   "Endpoints": [
@@ -155,7 +218,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "8098"
+          "Value": "8116"
         },
         {
           "Name": "Content-Type",
@@ -163,11 +226,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"vI1m9QDv704yM0Z/OHB+uYyYUMatIzAld53/d8tcSag=\""
+          "Value": "\"PiJRhQdx4VG3ux1PjAEBdN+f1v/sHDk5ObIDRjnEzGo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 15 Mar 2026 08:37:22 GMT"
+          "Value": "Sun, 22 Mar 2026 13:11:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -177,12 +240,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-vI1m9QDv704yM0Z/OHB+uYyYUMatIzAld53/d8tcSag="
+          "Value": "sha256-PiJRhQdx4VG3ux1PjAEBdN+f1v/sHDk5ObIDRjnEzGo="
         }
       ]
     },
     {
-      "Route": "AngularApp/Booking/bookingForm.swep6opz08.html",
+      "Route": "AngularApp/Booking/bookingForm.ick30dsp4p.html",
       "AssetFile": "C:\\MyProjects\\BarberBooking\\BarberBooking.WebAPI\\BarberBooking.WebAPI\\wwwroot\\AngularApp\\Booking\\bookingForm.html",
       "Selectors": [],
       "ResponseHeaders": [
@@ -192,7 +255,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "8098"
+          "Value": "8116"
         },
         {
           "Name": "Content-Type",
@@ -200,11 +263,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"vI1m9QDv704yM0Z/OHB+uYyYUMatIzAld53/d8tcSag=\""
+          "Value": "\"PiJRhQdx4VG3ux1PjAEBdN+f1v/sHDk5ObIDRjnEzGo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 15 Mar 2026 08:37:22 GMT"
+          "Value": "Sun, 22 Mar 2026 13:11:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -214,7 +277,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "swep6opz08"
+          "Value": "ick30dsp4p"
         },
         {
           "Name": "label",
@@ -222,7 +285,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-vI1m9QDv704yM0Z/OHB+uYyYUMatIzAld53/d8tcSag="
+          "Value": "sha256-PiJRhQdx4VG3ux1PjAEBdN+f1v/sHDk5ObIDRjnEzGo="
         }
       ]
     },
@@ -391,51 +454,6 @@
       ]
     },
     {
-      "Route": "AngularApp/Dashboard/dashboard.4ud818q0b7.html",
-      "AssetFile": "C:\\MyProjects\\BarberBooking\\BarberBooking.WebAPI\\BarberBooking.WebAPI\\wwwroot\\AngularApp\\Dashboard\\dashboard.html",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "15589"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/html"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"DFkz/Umz2p1V6bTgHp6gpL8GM7ebjM3m1cUumSETDC4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 14 Mar 2026 18:26:37 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "4ud818q0b7"
-        },
-        {
-          "Name": "label",
-          "Value": "AngularApp/Dashboard/dashboard.html"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-DFkz/Umz2p1V6bTgHp6gpL8GM7ebjM3m1cUumSETDC4="
-        }
-      ]
-    },
-    {
       "Route": "AngularApp/Dashboard/dashboard.html",
       "AssetFile": "C:\\MyProjects\\BarberBooking\\BarberBooking.WebAPI\\BarberBooking.WebAPI\\wwwroot\\AngularApp\\Dashboard\\dashboard.html",
       "Selectors": [],
@@ -446,7 +464,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "15589"
+          "Value": "16444"
         },
         {
           "Name": "Content-Type",
@@ -454,11 +472,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"DFkz/Umz2p1V6bTgHp6gpL8GM7ebjM3m1cUumSETDC4=\""
+          "Value": "\"6SN2fPPfGPWvn9uzTpbtkWQ1+wOGJHIYuE6JfsHKPFA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 14 Mar 2026 18:26:37 GMT"
+          "Value": "Sun, 22 Mar 2026 12:29:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -468,13 +486,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-DFkz/Umz2p1V6bTgHp6gpL8GM7ebjM3m1cUumSETDC4="
+          "Value": "sha256-6SN2fPPfGPWvn9uzTpbtkWQ1+wOGJHIYuE6JfsHKPFA="
         }
       ]
     },
     {
-      "Route": "AngularApp/Dashboard/DashboardController.09s2ubthv8.js",
-      "AssetFile": "C:\\MyProjects\\BarberBooking\\BarberBooking.WebAPI\\BarberBooking.WebAPI\\wwwroot\\AngularApp\\Dashboard\\DashboardController.js",
+      "Route": "AngularApp/Dashboard/dashboard.rng785dmx1.html",
+      "AssetFile": "C:\\MyProjects\\BarberBooking\\BarberBooking.WebAPI\\BarberBooking.WebAPI\\wwwroot\\AngularApp\\Dashboard\\dashboard.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -483,19 +501,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5392"
+          "Value": "16444"
         },
         {
           "Name": "Content-Type",
-          "Value": "text/javascript"
+          "Value": "text/html"
         },
         {
           "Name": "ETag",
-          "Value": "\"fApCbE8MgI6+xkYTD4jjxDPMMsMRHSxDX0zp9RKn3GY=\""
+          "Value": "\"6SN2fPPfGPWvn9uzTpbtkWQ1+wOGJHIYuE6JfsHKPFA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 15 Mar 2026 08:43:41 GMT"
+          "Value": "Sun, 22 Mar 2026 12:29:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -505,7 +523,52 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "09s2ubthv8"
+          "Value": "rng785dmx1"
+        },
+        {
+          "Name": "label",
+          "Value": "AngularApp/Dashboard/dashboard.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6SN2fPPfGPWvn9uzTpbtkWQ1+wOGJHIYuE6JfsHKPFA="
+        }
+      ]
+    },
+    {
+      "Route": "AngularApp/Dashboard/DashboardController.323mhj772t.js",
+      "AssetFile": "C:\\MyProjects\\BarberBooking\\BarberBooking.WebAPI\\BarberBooking.WebAPI\\wwwroot\\AngularApp\\Dashboard\\DashboardController.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5946"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BToPbS4L8n6+LTfltrlc39XiyQ+KmWaZ0SD9tqWnSn0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 22 Mar 2026 12:12:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "323mhj772t"
         },
         {
           "Name": "label",
@@ -513,7 +576,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-fApCbE8MgI6+xkYTD4jjxDPMMsMRHSxDX0zp9RKn3GY="
+          "Value": "sha256-BToPbS4L8n6+LTfltrlc39XiyQ+KmWaZ0SD9tqWnSn0="
         }
       ]
     },
@@ -528,7 +591,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5392"
+          "Value": "5946"
         },
         {
           "Name": "Content-Type",
@@ -536,11 +599,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"fApCbE8MgI6+xkYTD4jjxDPMMsMRHSxDX0zp9RKn3GY=\""
+          "Value": "\"BToPbS4L8n6+LTfltrlc39XiyQ+KmWaZ0SD9tqWnSn0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 15 Mar 2026 08:43:41 GMT"
+          "Value": "Sun, 22 Mar 2026 12:12:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -550,7 +613,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-fApCbE8MgI6+xkYTD4jjxDPMMsMRHSxDX0zp9RKn3GY="
+          "Value": "sha256-BToPbS4L8n6+LTfltrlc39XiyQ+KmWaZ0SD9tqWnSn0="
         }
       ]
     },
@@ -577,7 +640,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Mar 2026 22:13:47 GMT"
+          "Value": "Sun, 22 Mar 2026 12:32:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -622,7 +685,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Mar 2026 22:13:47 GMT"
+          "Value": "Sun, 22 Mar 2026 12:32:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -633,6 +696,252 @@
         {
           "Name": "integrity",
           "Value": "sha256-X7HkZmTUv3/O0+JZxfR18rd0IGZThnyTjiy+h7Li9I4="
+        }
+      ]
+    },
+    {
+      "Route": "AngularApp/Login/login.html",
+      "AssetFile": "C:\\MyProjects\\BarberBooking\\BarberBooking.WebAPI\\BarberBooking.WebAPI\\wwwroot\\AngularApp\\Login\\login.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3972"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FtLSwigCpd49W+I8mUDgssg6+d5ZjpFmzrv8lBnUNX8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 20 Mar 2026 22:57:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-FtLSwigCpd49W+I8mUDgssg6+d5ZjpFmzrv8lBnUNX8="
+        }
+      ]
+    },
+    {
+      "Route": "AngularApp/Login/login.m8yvb6prtr.html",
+      "AssetFile": "C:\\MyProjects\\BarberBooking\\BarberBooking.WebAPI\\BarberBooking.WebAPI\\wwwroot\\AngularApp\\Login\\login.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3972"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FtLSwigCpd49W+I8mUDgssg6+d5ZjpFmzrv8lBnUNX8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 20 Mar 2026 22:57:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "m8yvb6prtr"
+        },
+        {
+          "Name": "label",
+          "Value": "AngularApp/Login/login.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-FtLSwigCpd49W+I8mUDgssg6+d5ZjpFmzrv8lBnUNX8="
+        }
+      ]
+    },
+    {
+      "Route": "AngularApp/Login/LoginController.gps3iv5rcz.js",
+      "AssetFile": "C:\\MyProjects\\BarberBooking\\BarberBooking.WebAPI\\BarberBooking.WebAPI\\wwwroot\\AngularApp\\Login\\LoginController.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1353"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7A2ib/MCpp2zN0RxzcQ6OVthrqXQhpY1P+8nO9g0VwY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 20 Mar 2026 23:02:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "gps3iv5rcz"
+        },
+        {
+          "Name": "label",
+          "Value": "AngularApp/Login/LoginController.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-7A2ib/MCpp2zN0RxzcQ6OVthrqXQhpY1P+8nO9g0VwY="
+        }
+      ]
+    },
+    {
+      "Route": "AngularApp/Login/LoginController.js",
+      "AssetFile": "C:\\MyProjects\\BarberBooking\\BarberBooking.WebAPI\\BarberBooking.WebAPI\\wwwroot\\AngularApp\\Login\\LoginController.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1353"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7A2ib/MCpp2zN0RxzcQ6OVthrqXQhpY1P+8nO9g0VwY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 20 Mar 2026 23:02:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-7A2ib/MCpp2zN0RxzcQ6OVthrqXQhpY1P+8nO9g0VwY="
+        }
+      ]
+    },
+    {
+      "Route": "AngularApp/Login/login-style.9pk0042l0p.css",
+      "AssetFile": "C:\\MyProjects\\BarberBooking\\BarberBooking.WebAPI\\BarberBooking.WebAPI\\wwwroot\\AngularApp\\Login\\login-style.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11062"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"M6dnMhUoWXCXTlpTOJ6bmfYrNSCOLz945hcrHupb3N8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 20 Mar 2026 22:46:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9pk0042l0p"
+        },
+        {
+          "Name": "label",
+          "Value": "AngularApp/Login/login-style.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-M6dnMhUoWXCXTlpTOJ6bmfYrNSCOLz945hcrHupb3N8="
+        }
+      ]
+    },
+    {
+      "Route": "AngularApp/Login/login-style.css",
+      "AssetFile": "C:\\MyProjects\\BarberBooking\\BarberBooking.WebAPI\\BarberBooking.WebAPI\\wwwroot\\AngularApp\\Login\\login-style.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11062"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"M6dnMhUoWXCXTlpTOJ6bmfYrNSCOLz945hcrHupb3N8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 20 Mar 2026 22:46:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-M6dnMhUoWXCXTlpTOJ6bmfYrNSCOLz945hcrHupb3N8="
         }
       ]
     }

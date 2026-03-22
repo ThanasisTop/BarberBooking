@@ -75,6 +75,36 @@
         }
       }
     },
+    "/api/Booking/getPaged": {
+      "get": {
+        "tags": [
+          "Booking"
+        ],
+        "parameters": [
+          {
+            "name": "pageNumber",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "pageSize",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Person/{id}": {
       "get": {
         "tags": [
@@ -236,6 +266,17 @@
           },
           "status": {
             "type": "string",
+            "nullable": true
+          },
+          "totalBookings": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "pagedBookings": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Booking"
+            },
             "nullable": true
           }
         },

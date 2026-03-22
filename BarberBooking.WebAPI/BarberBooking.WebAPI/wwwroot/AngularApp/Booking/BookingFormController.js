@@ -24,14 +24,8 @@ angular.module('bookingApp', [])
         ];
 
         $scope.services = [
-          'Consultation',
-          'Full-Day Spa Package',
-          'Personal Training Session',
-          'Massage Therapy',
-          'Nutrition Coaching',
-          'Beauty & Grooming',
-          'Yoga Class',
-          'Medical Check-Up'
+          'Hair Cut',
+          'Shaving'
         ];
 
         // ── Form model ──

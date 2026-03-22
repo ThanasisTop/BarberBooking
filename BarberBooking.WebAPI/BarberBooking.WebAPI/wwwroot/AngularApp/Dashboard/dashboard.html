@@ -72,6 +72,7 @@
                 </div>
                 <div class="topbar-actions">
                     <button class="topbar-btn" ng-click="vm.navigate('newbooking')">+ New Booking</button>
+                    <button class="topbar-btn" ng-click="vm.navigate('logout')">Log out</button>
                 </div>
             </header>
 
@@ -273,18 +274,18 @@
                         </thead>
                         <tbody>
                             <tr ng-repeat="b in vm.bookings | filter:vm.searchFilter | orderBy:'id'">
-                                <td>#{{b.id}}</td>
-                                <td>{{b.firstName}}</td>
-                                <td>{{b.lastName}}</td>
-                                <td>{{b.phone}}</td>
-                                <td>{{b.email}}</td>
-                                <td>{{b.service}}</td>
-                                <td>{{b.time}}</td>
-                                <td>{{b.persons}}</td>
-                                <td><span class="badge" ng-class="vm.badgeClass(b.status)">{{b.status}}</span></td>
-                                <td style="white-space:nowrap; display:flex; gap:0.4rem; padding:0.75rem 1.1rem">
-                                    <button class="tbl-btn" ng-click="vm.changeStatus(b.id,'Confirmed')">Confirm</button>
-                                    <button class="tbl-btn danger" ng-click="vm.changeStatus(b.id,'Cancelled')">Cancel</button>
+                                <td class="data-label">#{{b.id}}</td>
+                                <td class="data-label">{{b.firstName}}</td>
+                                <td class="data-label">{{b.lastName}}</td>
+                                <td class="data-label">{{b.phone}}</td>
+                                <td class="data-label">{{b.email}}</td>
+                                <td class="data-label">{{b.service}}</td>
+                                <td class="data-label">{{b.time}}</td>
+                                <td class="data-label">{{b.persons}}</td>
+                                <td class="data-label"><span class="badge" ng-class="vm.badgeClass(b.status)">{{b.status}}</span></td>
+                                <td class="data-label" style="white-space:nowrap; gap:0.4rem; padding:0.75rem 1.1rem">
+                                    <button class="tbl-btn" ng-disabled="b.status=='Confirmed'" ng-click="vm.changeStatus(b.id,'Confirmed')">Confirm</button>
+                                    <button class="tbl-btn danger" ng-disabled="b.status=='Canceled'" ng-click="vm.changeStatus(b.id,'Cancelled')">Cancel</button>
                                 </td>
                             </tr>
                             <tr ng-if="(vm.bookings | filter:searchFilter).length === 0">
@@ -296,11 +297,20 @@
 
                 <!-- Pagination (visual) -->
                 <div class="pagination">
-                    <button class="page-btn">‹</button>
-                    <button class="page-btn active">1</button>
-                    <button class="page-btn">2</button>
-                    <button class="page-btn">3</button>
-                    <button class="page-btn">›</button>
+                    <button class="page-btn"
+                            ng-disabled="vm.pageNumber === 1"
+                            ng-click="vm.changePage(vm.pageNumber - 1)">‹</button>
+                    <button class="page-btn"
+                            ng-repeat="page in [].constructor(vm.totalPages) track by $index"
+                            ng-click="vm.changePage($index + 1)"
+                            ng-class="{'active': vm.pageNumber === ($index + 1)}">
+                            {{$index + 1}}
+                    </button>
+                    <button class="page-btn"
+                            ng-disabled="vm.pageNumber === vm.totalPages"
+                            ng-click="vm.changePage(vm.pageNumber + 1)">
+                        ›
+                    </button>
                 </div>
 
             </div><!-- /bookings -->

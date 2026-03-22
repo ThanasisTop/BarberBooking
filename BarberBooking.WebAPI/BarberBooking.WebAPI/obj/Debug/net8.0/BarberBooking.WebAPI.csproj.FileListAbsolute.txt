@@ -161,3 +161,5 @@ C:\MyProjects\BarberBooking\BarberBooking.WebAPI\BarberBooking.WebAPI\bin\Debug\
 C:\MyProjects\BarberBooking\BarberBooking.WebAPI\BarberBooking.WebAPI\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\MyProjects\BarberBooking\BarberBooking.WebAPI\BarberBooking.WebAPI\bin\Debug\net8.0\System.Net.WebSockets.WebSocketProtocol.dll
 C:\MyProjects\BarberBooking\BarberBooking.WebAPI\BarberBooking.WebAPI\bin\Debug\net8.0\BarberBooking.WebAPI.staticwebassets.runtime.json
+C:\MyProjects\BarberBooking\BarberBooking.WebAPI\BarberBooking.WebAPI\bin\Debug\net8.0\FluentValidation.dll
+C:\MyProjects\BarberBooking\BarberBooking.WebAPI\BarberBooking.WebAPI\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll

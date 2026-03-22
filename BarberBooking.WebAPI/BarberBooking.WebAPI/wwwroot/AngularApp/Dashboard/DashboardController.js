@@ -35,20 +35,36 @@ angular.module('dashboardApp', [])
         if(page=='newbooking'){
           window.location.href = "../Booking/bookingForm.html";
         }
+        if (page == 'logout') {
+            window.location.href = "../Login/login.html";
+        }
     };
 
+    vm.pageNumber = 1;
+    vm.pageSize = 5;
+    vm.totalPages = 0;
     function getAllBookings()
     {
         $http({
             method: 'GET',
-            url: 'https://localhost:7080/api/Booking'
+            url: 'https://localhost:7080/api/Booking/getPaged',
+            params: { pageNumber: vm.pageNumber, pageSize: 5 }
         }).then(function successCallback(response) {
-              vm.bookings=response.data;
+            const totalCount = response.data.totalBookings;
+            vm.totalPages = Math.ceil(totalCount / vm.pageSize);
+            vm.bookings = response.data.pagedBookings;
         }, function errorCallback(error) {
               alert('Failed to load all bookings');
               console.log(error.data)
         });
     }
+
+    vm.changePage = function (page) {
+        if (page < 1 || page > vm.totalPages) return;
+
+        vm.pageNumber = page;
+        getAllBookings();
+    };
 
     function getMyPerson()
     {
@@ -132,6 +148,7 @@ angular.module('dashboardApp', [])
               console.log(error.data)
         });
     }
+
 
     function playBell() {
         var context = new AudioContext();

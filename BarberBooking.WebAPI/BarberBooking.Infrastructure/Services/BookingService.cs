@@ -1,26 +1,36 @@
 ﻿using BarberBooking.Application.Interfaces;
 using BarberBooking.Application.Interfaces.Services;
+using BarberBooking.Application.Validators;
 using BarberBooking.Core.Entities;
 using BarberBooking.Core.Entities.Common;
-using Microsoft.Data.SqlClient;
+using FluentValidation;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BarberBooking.Infrastructure.Services
 {
     public class BookingService : IBookingService
     {
         private readonly IGenericRepository<Booking> _genericRepository;
-        public BookingService(IGenericRepository<Booking> genericRepository) {
+        private readonly IBookingRepository _bookingRepository;
+        private readonly IValidator<Booking> _bookingValidator;
+        public BookingService(IGenericRepository<Booking> genericRepository,
+                                IBookingRepository bookingRepository,
+                                IValidator<Booking> bookingValidator) {
             _genericRepository = genericRepository;
+            _bookingRepository = bookingRepository;
+            _bookingValidator = bookingValidator;
         }
 
         public async Task<Result<Booking>> AddBookingAsync(Booking booking)
         {
+            var validateBooking = await _bookingValidator.ValidateAsync(booking);
+
+            if (!validateBooking.IsValid)
+            {
+                var errors = validateBooking.Errors.Select(e => e.ErrorMessage).ToList();
+                return Result<Booking>.Failure(string.Join(", ", errors));
+            }
+
             booking.Status = "Pending";
             try 
             {
@@ -77,6 +87,19 @@ namespace BarberBooking.Infrastructure.Services
             } catch (Exception ex)
             {
                 return Result<Booking>.Failure($"An error occurred while updating the booking: {ex.Message}");
+            }
+        }
+
+        public async Task<Result<Booking>> GetPagedBookingsAsync(int pageNumber, int pageSize)
+        {
+            try
+            {
+                var pagedBookings = await _bookingRepository.GetPagedBookings(pageNumber, pageSize);
+                return Result<Booking>.Success(pagedBookings);
+            }
+            catch (Exception ex)
+            {
+                return Result<Booking>.Failure($"An error occurred while retrieving paged bookings: {ex.Message}");
             }
         }
 

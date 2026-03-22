@@ -1,7 +1,9 @@
 ﻿using BarberBooking.Application.Interfaces.Services;
 using BarberBooking.Core.Entities;
 using BarberBooking.WebAPI.Hubs;
+using FluentValidation;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.RateLimiting;
 using Microsoft.AspNetCore.SignalR;
 
 namespace BarberBooking.WebAPI.Controllers
@@ -16,10 +18,10 @@ namespace BarberBooking.WebAPI.Controllers
         {
             _bookingService = bookingService;
             _hubContext = hubContext;
-
         }
 
         [HttpPost]
+        [EnableRateLimiting("booking-form-per-ip")]
         public async Task<IActionResult> AddBooking(Booking booking)
         {
             var addedBooking = await _bookingService.AddBookingAsync(booking);
@@ -51,6 +53,19 @@ namespace BarberBooking.WebAPI.Controllers
         public async Task<IActionResult> GetAllBookings()
         {
             var bookings = await _bookingService.GetAllBookingsAsync();
+
+            if (!string.IsNullOrEmpty(bookings.Error))
+            {
+                return BadRequest(bookings.Error);
+            }
+
+            return Ok(bookings.Value);
+        }
+
+        [HttpGet("getPaged")]
+        public async Task<IActionResult> GetPagedBookings(int pageNumber, int pageSize)
+        {
+            var bookings = await _bookingService.GetPagedBookingsAsync(pageNumber, pageSize);
 
             if (!string.IsNullOrEmpty(bookings.Error))
             {

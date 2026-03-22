@@ -99,7 +99,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "8098"
+          "Value": "8116"
         },
         {
           "Name": "Content-Type",
@@ -107,22 +107,22 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"vI1m9QDv704yM0Z/OHB+uYyYUMatIzAld53/d8tcSag=\""
+          "Value": "\"PiJRhQdx4VG3ux1PjAEBdN+f1v/sHDk5ObIDRjnEzGo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 15 Mar 2026 08:37:22 GMT"
+          "Value": "Sun, 22 Mar 2026 13:11:23 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-vI1m9QDv704yM0Z/OHB+uYyYUMatIzAld53/d8tcSag="
+          "Value": "sha256-PiJRhQdx4VG3ux1PjAEBdN+f1v/sHDk5ObIDRjnEzGo="
         }
       ]
     },
     {
-      "Route": "AngularApp/Booking/bookingForm.swep6opz08.html",
+      "Route": "AngularApp/Booking/bookingForm.ick30dsp4p.html",
       "AssetFile": "AngularApp/Booking/bookingForm.html",
       "Selectors": [],
       "ResponseHeaders": [
@@ -136,7 +136,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "8098"
+          "Value": "8116"
         },
         {
           "Name": "Content-Type",
@@ -144,21 +144,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"vI1m9QDv704yM0Z/OHB+uYyYUMatIzAld53/d8tcSag=\""
+          "Value": "\"PiJRhQdx4VG3ux1PjAEBdN+f1v/sHDk5ObIDRjnEzGo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 15 Mar 2026 08:37:22 GMT"
+          "Value": "Sun, 22 Mar 2026 13:11:23 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "swep6opz08"
+          "Value": "ick30dsp4p"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-vI1m9QDv704yM0Z/OHB+uYyYUMatIzAld53/d8tcSag="
+          "Value": "sha256-PiJRhQdx4VG3ux1PjAEBdN+f1v/sHDk5ObIDRjnEzGo="
         },
         {
           "Name": "label",
@@ -249,7 +249,7 @@
       ]
     },
     {
-      "Route": "AngularApp/Dashboard/DashboardController.09s2ubthv8.js",
+      "Route": "AngularApp/Dashboard/DashboardController.323mhj772t.js",
       "AssetFile": "AngularApp/Dashboard/DashboardController.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -263,7 +263,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5392"
+          "Value": "5946"
         },
         {
           "Name": "Content-Type",
@@ -271,21 +271,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"fApCbE8MgI6+xkYTD4jjxDPMMsMRHSxDX0zp9RKn3GY=\""
+          "Value": "\"BToPbS4L8n6+LTfltrlc39XiyQ+KmWaZ0SD9tqWnSn0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 15 Mar 2026 08:43:41 GMT"
+          "Value": "Sun, 22 Mar 2026 12:12:36 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "09s2ubthv8"
+          "Value": "323mhj772t"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-fApCbE8MgI6+xkYTD4jjxDPMMsMRHSxDX0zp9RKn3GY="
+          "Value": "sha256-BToPbS4L8n6+LTfltrlc39XiyQ+KmWaZ0SD9tqWnSn0="
         },
         {
           "Name": "label",
@@ -308,7 +308,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5392"
+          "Value": "5946"
         },
         {
           "Name": "Content-Type",
@@ -316,17 +316,17 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"fApCbE8MgI6+xkYTD4jjxDPMMsMRHSxDX0zp9RKn3GY=\""
+          "Value": "\"BToPbS4L8n6+LTfltrlc39XiyQ+KmWaZ0SD9tqWnSn0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 15 Mar 2026 08:43:41 GMT"
+          "Value": "Sun, 22 Mar 2026 12:12:36 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-fApCbE8MgI6+xkYTD4jjxDPMMsMRHSxDX0zp9RKn3GY="
+          "Value": "sha256-BToPbS4L8n6+LTfltrlc39XiyQ+KmWaZ0SD9tqWnSn0="
         }
       ]
     },
@@ -357,7 +357,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Mar 2026 22:13:47 GMT"
+          "Value": "Sun, 22 Mar 2026 12:32:58 GMT"
         }
       ],
       "EndpointProperties": [
@@ -402,58 +402,13 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Mar 2026 22:13:47 GMT"
+          "Value": "Sun, 22 Mar 2026 12:32:58 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
           "Value": "sha256-X7HkZmTUv3/O0+JZxfR18rd0IGZThnyTjiy+h7Li9I4="
-        }
-      ]
-    },
-    {
-      "Route": "AngularApp/Dashboard/dashboard.4ud818q0b7.html",
-      "AssetFile": "AngularApp/Dashboard/dashboard.html",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "15589"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/html"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"DFkz/Umz2p1V6bTgHp6gpL8GM7ebjM3m1cUumSETDC4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 14 Mar 2026 18:26:37 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "4ud818q0b7"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-DFkz/Umz2p1V6bTgHp6gpL8GM7ebjM3m1cUumSETDC4="
-        },
-        {
-          "Name": "label",
-          "Value": "AngularApp/Dashboard/dashboard.html"
         }
       ]
     },
@@ -472,7 +427,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "15589"
+          "Value": "16444"
         },
         {
           "Name": "Content-Type",
@@ -480,17 +435,308 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"DFkz/Umz2p1V6bTgHp6gpL8GM7ebjM3m1cUumSETDC4=\""
+          "Value": "\"6SN2fPPfGPWvn9uzTpbtkWQ1+wOGJHIYuE6JfsHKPFA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 14 Mar 2026 18:26:37 GMT"
+          "Value": "Sun, 22 Mar 2026 12:29:35 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-DFkz/Umz2p1V6bTgHp6gpL8GM7ebjM3m1cUumSETDC4="
+          "Value": "sha256-6SN2fPPfGPWvn9uzTpbtkWQ1+wOGJHIYuE6JfsHKPFA="
+        }
+      ]
+    },
+    {
+      "Route": "AngularApp/Dashboard/dashboard.rng785dmx1.html",
+      "AssetFile": "AngularApp/Dashboard/dashboard.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16444"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6SN2fPPfGPWvn9uzTpbtkWQ1+wOGJHIYuE6JfsHKPFA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 22 Mar 2026 12:29:35 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rng785dmx1"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6SN2fPPfGPWvn9uzTpbtkWQ1+wOGJHIYuE6JfsHKPFA="
+        },
+        {
+          "Name": "label",
+          "Value": "AngularApp/Dashboard/dashboard.html"
+        }
+      ]
+    },
+    {
+      "Route": "AngularApp/Login/LoginController.gps3iv5rcz.js",
+      "AssetFile": "AngularApp/Login/LoginController.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1353"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7A2ib/MCpp2zN0RxzcQ6OVthrqXQhpY1P+8nO9g0VwY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 20 Mar 2026 23:02:26 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "gps3iv5rcz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-7A2ib/MCpp2zN0RxzcQ6OVthrqXQhpY1P+8nO9g0VwY="
+        },
+        {
+          "Name": "label",
+          "Value": "AngularApp/Login/LoginController.js"
+        }
+      ]
+    },
+    {
+      "Route": "AngularApp/Login/LoginController.js",
+      "AssetFile": "AngularApp/Login/LoginController.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1353"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7A2ib/MCpp2zN0RxzcQ6OVthrqXQhpY1P+8nO9g0VwY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 20 Mar 2026 23:02:26 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-7A2ib/MCpp2zN0RxzcQ6OVthrqXQhpY1P+8nO9g0VwY="
+        }
+      ]
+    },
+    {
+      "Route": "AngularApp/Login/login-style.9pk0042l0p.css",
+      "AssetFile": "AngularApp/Login/login-style.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11062"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"M6dnMhUoWXCXTlpTOJ6bmfYrNSCOLz945hcrHupb3N8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 20 Mar 2026 22:46:00 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9pk0042l0p"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-M6dnMhUoWXCXTlpTOJ6bmfYrNSCOLz945hcrHupb3N8="
+        },
+        {
+          "Name": "label",
+          "Value": "AngularApp/Login/login-style.css"
+        }
+      ]
+    },
+    {
+      "Route": "AngularApp/Login/login-style.css",
+      "AssetFile": "AngularApp/Login/login-style.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11062"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"M6dnMhUoWXCXTlpTOJ6bmfYrNSCOLz945hcrHupb3N8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 20 Mar 2026 22:46:00 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-M6dnMhUoWXCXTlpTOJ6bmfYrNSCOLz945hcrHupb3N8="
+        }
+      ]
+    },
+    {
+      "Route": "AngularApp/Login/login.html",
+      "AssetFile": "AngularApp/Login/login.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3972"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FtLSwigCpd49W+I8mUDgssg6+d5ZjpFmzrv8lBnUNX8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 20 Mar 2026 22:57:41 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-FtLSwigCpd49W+I8mUDgssg6+d5ZjpFmzrv8lBnUNX8="
+        }
+      ]
+    },
+    {
+      "Route": "AngularApp/Login/login.m8yvb6prtr.html",
+      "AssetFile": "AngularApp/Login/login.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3972"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FtLSwigCpd49W+I8mUDgssg6+d5ZjpFmzrv8lBnUNX8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 20 Mar 2026 22:57:41 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "m8yvb6prtr"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-FtLSwigCpd49W+I8mUDgssg6+d5ZjpFmzrv8lBnUNX8="
+        },
+        {
+          "Name": "label",
+          "Value": "AngularApp/Login/login.html"
         }
       ]
     }

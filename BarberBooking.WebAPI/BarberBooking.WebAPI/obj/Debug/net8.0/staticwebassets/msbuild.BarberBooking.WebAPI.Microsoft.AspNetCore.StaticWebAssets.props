@@ -12,8 +12,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>swep6opz08</Fingerprint>
-      <Integrity>vI1m9QDv704yM0Z/OHB+uYyYUMatIzAld53/d8tcSag=</Integrity>
+      <Fingerprint>ick30dsp4p</Fingerprint>
+      <Integrity>PiJRhQdx4VG3ux1PjAEBdN+f1v/sHDk5ObIDRjnEzGo=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\AngularApp\Booking\bookingForm.html'))</OriginalItemSpec>
@@ -66,8 +66,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>4ud818q0b7</Fingerprint>
-      <Integrity>DFkz/Umz2p1V6bTgHp6gpL8GM7ebjM3m1cUumSETDC4=</Integrity>
+      <Fingerprint>rng785dmx1</Fingerprint>
+      <Integrity>6SN2fPPfGPWvn9uzTpbtkWQ1+wOGJHIYuE6JfsHKPFA=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\AngularApp\Dashboard\dashboard.html'))</OriginalItemSpec>
@@ -102,11 +102,65 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>09s2ubthv8</Fingerprint>
-      <Integrity>fApCbE8MgI6+xkYTD4jjxDPMMsMRHSxDX0zp9RKn3GY=</Integrity>
+      <Fingerprint>323mhj772t</Fingerprint>
+      <Integrity>BToPbS4L8n6+LTfltrlc39XiyQ+KmWaZ0SD9tqWnSn0=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\AngularApp\Dashboard\DashboardController.js'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\AngularApp\Login\login.html'))">
+      <SourceType>Package</SourceType>
+      <SourceId>BarberBooking.WebAPI</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/BarberBooking.WebAPI</BasePath>
+      <RelativePath>AngularApp/Login/login.html</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>m8yvb6prtr</Fingerprint>
+      <Integrity>FtLSwigCpd49W+I8mUDgssg6+d5ZjpFmzrv8lBnUNX8=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\AngularApp\Login\login.html'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\AngularApp\Login\login-style.css'))">
+      <SourceType>Package</SourceType>
+      <SourceId>BarberBooking.WebAPI</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/BarberBooking.WebAPI</BasePath>
+      <RelativePath>AngularApp/Login/login-style.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>9pk0042l0p</Fingerprint>
+      <Integrity>M6dnMhUoWXCXTlpTOJ6bmfYrNSCOLz945hcrHupb3N8=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\AngularApp\Login\login-style.css'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\AngularApp\Login\LoginController.js'))">
+      <SourceType>Package</SourceType>
+      <SourceId>BarberBooking.WebAPI</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/BarberBooking.WebAPI</BasePath>
+      <RelativePath>AngularApp/Login/LoginController.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>gps3iv5rcz</Fingerprint>
+      <Integrity>7A2ib/MCpp2zN0RxzcQ6OVthrqXQhpY1P+8nO9g0VwY=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\AngularApp\Login\LoginController.js'))</OriginalItemSpec>
     </StaticWebAsset>
   </ItemGroup>
 </Project>

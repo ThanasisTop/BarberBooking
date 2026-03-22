@@ -1,6 +1,0 @@
-C:\MyProjects\BarberBooking\BarberBooking.WebAPI\BarberBooking.WebAPI\wwwroot\Booking\bookingForm.html
-C:\MyProjects\BarberBooking\BarberBooking.WebAPI\BarberBooking.WebAPI\wwwroot\Booking\BookingFormController.js
-C:\MyProjects\BarberBooking\BarberBooking.WebAPI\BarberBooking.WebAPI\wwwroot\Booking\style.css
-C:\MyProjects\BarberBooking\BarberBooking.WebAPI\BarberBooking.WebAPI\wwwroot\Dashboard\dashboard.html
-C:\MyProjects\BarberBooking\BarberBooking.WebAPI\BarberBooking.WebAPI\wwwroot\Dashboard\DashboardController.js
-C:\MyProjects\BarberBooking\BarberBooking.WebAPI\BarberBooking.WebAPI\wwwroot\Dashboard\dashboard-style.css

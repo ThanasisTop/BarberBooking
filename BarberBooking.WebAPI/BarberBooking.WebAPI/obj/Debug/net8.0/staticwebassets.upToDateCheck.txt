@@ -4,3 +4,6 @@ wwwroot\AngularApp\Booking\style.css
 wwwroot\AngularApp\Dashboard\dashboard.html
 wwwroot\AngularApp\Dashboard\DashboardController.js
 wwwroot\AngularApp\Dashboard\dashboard-style.css
+wwwroot\AngularApp\Login\login.html
+wwwroot\AngularApp\Login\LoginController.js
+wwwroot\AngularApp\Login\login-style.css

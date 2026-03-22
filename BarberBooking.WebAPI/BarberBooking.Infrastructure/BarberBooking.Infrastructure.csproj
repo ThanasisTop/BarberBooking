@@ -21,7 +21,6 @@
 
   <ItemGroup>
     <Folder Include="Persistence\Migrations\" />
-    <Folder Include="Repositories\Booking\" />
   </ItemGroup>
 
 </Project>

@@ -25,6 +25,18 @@
       "PackagePath": "staticwebassets\\AngularApp\\Dashboard\\dashboard.html"
     },
     {
+      "Id": "C:\\MyProjects\\BarberBooking\\BarberBooking.WebAPI\\BarberBooking.WebAPI\\wwwroot\\AngularApp\\Login\\LoginController.js",
+      "PackagePath": "staticwebassets\\AngularApp\\Login\\LoginController.js"
+    },
+    {
+      "Id": "C:\\MyProjects\\BarberBooking\\BarberBooking.WebAPI\\BarberBooking.WebAPI\\wwwroot\\AngularApp\\Login\\login-style.css",
+      "PackagePath": "staticwebassets\\AngularApp\\Login\\login-style.css"
+    },
+    {
+      "Id": "C:\\MyProjects\\BarberBooking\\BarberBooking.WebAPI\\BarberBooking.WebAPI\\wwwroot\\AngularApp\\Login\\login.html",
+      "PackagePath": "staticwebassets\\AngularApp\\Login\\login.html"
+    },
+    {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.BarberBooking.WebAPI.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },

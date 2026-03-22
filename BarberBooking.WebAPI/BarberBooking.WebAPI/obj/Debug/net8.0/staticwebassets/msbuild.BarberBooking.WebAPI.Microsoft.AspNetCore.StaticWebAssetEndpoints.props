@@ -3,14 +3,14 @@
     <StaticWebAssetEndpoint Include="_content/BarberBooking.WebAPI/AngularApp/Booking/bookingForm.html">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\AngularApp\Booking\bookingForm.html'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-vI1m9QDv704yM0Z/OHB\u002BuYyYUMatIzAld53/d8tcSag="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"8098"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022vI1m9QDv704yM0Z/OHB\u002BuYyYUMatIzAld53/d8tcSag=\u0022"},{"Name":"Last-Modified","Value":"Sun, 15 Mar 2026 08:37:22 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-PiJRhQdx4VG3ux1PjAEBdN\u002Bf1v/sHDk5ObIDRjnEzGo="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"8116"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022PiJRhQdx4VG3ux1PjAEBdN\u002Bf1v/sHDk5ObIDRjnEzGo=\u0022"},{"Name":"Last-Modified","Value":"Sun, 22 Mar 2026 13:11:23 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/BarberBooking.WebAPI/AngularApp/Booking/bookingForm.swep6opz08.html">
+    <StaticWebAssetEndpoint Include="_content/BarberBooking.WebAPI/AngularApp/Booking/bookingForm.ick30dsp4p.html">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\AngularApp\Booking\bookingForm.html'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"swep6opz08"},{"Name":"integrity","Value":"sha256-vI1m9QDv704yM0Z/OHB\u002BuYyYUMatIzAld53/d8tcSag="},{"Name":"label","Value":"_content/BarberBooking.WebAPI/AngularApp/Booking/bookingForm.html"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"8098"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022vI1m9QDv704yM0Z/OHB\u002BuYyYUMatIzAld53/d8tcSag=\u0022"},{"Name":"Last-Modified","Value":"Sun, 15 Mar 2026 08:37:22 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ick30dsp4p"},{"Name":"integrity","Value":"sha256-PiJRhQdx4VG3ux1PjAEBdN\u002Bf1v/sHDk5ObIDRjnEzGo="},{"Name":"label","Value":"_content/BarberBooking.WebAPI/AngularApp/Booking/bookingForm.html"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"8116"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022PiJRhQdx4VG3ux1PjAEBdN\u002Bf1v/sHDk5ObIDRjnEzGo=\u0022"},{"Name":"Last-Modified","Value":"Sun, 22 Mar 2026 13:11:23 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/BarberBooking.WebAPI/AngularApp/Booking/BookingFormController.ain77vb9xx.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\AngularApp\Booking\BookingFormController.js'))</AssetFile>
@@ -40,37 +40,73 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\AngularApp\Dashboard\dashboard-style.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"9uydhjwi9q"},{"Name":"integrity","Value":"sha256-X7HkZmTUv3/O0\u002BJZxfR18rd0IGZThnyTjiy\u002Bh7Li9I4="},{"Name":"label","Value":"_content/BarberBooking.WebAPI/AngularApp/Dashboard/dashboard-style.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"19910"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022X7HkZmTUv3/O0\u002BJZxfR18rd0IGZThnyTjiy\u002Bh7Li9I4=\u0022"},{"Name":"Last-Modified","Value":"Tue, 10 Mar 2026 22:13:47 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"19910"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022X7HkZmTUv3/O0\u002BJZxfR18rd0IGZThnyTjiy\u002Bh7Li9I4=\u0022"},{"Name":"Last-Modified","Value":"Sun, 22 Mar 2026 12:32:58 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/BarberBooking.WebAPI/AngularApp/Dashboard/dashboard-style.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\AngularApp\Dashboard\dashboard-style.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-X7HkZmTUv3/O0\u002BJZxfR18rd0IGZThnyTjiy\u002Bh7Li9I4="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"19910"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022X7HkZmTUv3/O0\u002BJZxfR18rd0IGZThnyTjiy\u002Bh7Li9I4=\u0022"},{"Name":"Last-Modified","Value":"Tue, 10 Mar 2026 22:13:47 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/BarberBooking.WebAPI/AngularApp/Dashboard/dashboard.4ud818q0b7.html">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\AngularApp\Dashboard\dashboard.html'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"4ud818q0b7"},{"Name":"integrity","Value":"sha256-DFkz/Umz2p1V6bTgHp6gpL8GM7ebjM3m1cUumSETDC4="},{"Name":"label","Value":"_content/BarberBooking.WebAPI/AngularApp/Dashboard/dashboard.html"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"15589"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022DFkz/Umz2p1V6bTgHp6gpL8GM7ebjM3m1cUumSETDC4=\u0022"},{"Name":"Last-Modified","Value":"Sat, 14 Mar 2026 18:26:37 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"19910"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022X7HkZmTUv3/O0\u002BJZxfR18rd0IGZThnyTjiy\u002Bh7Li9I4=\u0022"},{"Name":"Last-Modified","Value":"Sun, 22 Mar 2026 12:32:58 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/BarberBooking.WebAPI/AngularApp/Dashboard/dashboard.html">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\AngularApp\Dashboard\dashboard.html'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-DFkz/Umz2p1V6bTgHp6gpL8GM7ebjM3m1cUumSETDC4="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"15589"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022DFkz/Umz2p1V6bTgHp6gpL8GM7ebjM3m1cUumSETDC4=\u0022"},{"Name":"Last-Modified","Value":"Sat, 14 Mar 2026 18:26:37 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-6SN2fPPfGPWvn9uzTpbtkWQ1\u002BwOGJHIYuE6JfsHKPFA="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"16444"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u00226SN2fPPfGPWvn9uzTpbtkWQ1\u002BwOGJHIYuE6JfsHKPFA=\u0022"},{"Name":"Last-Modified","Value":"Sun, 22 Mar 2026 12:29:35 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/BarberBooking.WebAPI/AngularApp/Dashboard/DashboardController.09s2ubthv8.js">
+    <StaticWebAssetEndpoint Include="_content/BarberBooking.WebAPI/AngularApp/Dashboard/dashboard.rng785dmx1.html">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\AngularApp\Dashboard\dashboard.html'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"rng785dmx1"},{"Name":"integrity","Value":"sha256-6SN2fPPfGPWvn9uzTpbtkWQ1\u002BwOGJHIYuE6JfsHKPFA="},{"Name":"label","Value":"_content/BarberBooking.WebAPI/AngularApp/Dashboard/dashboard.html"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"16444"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u00226SN2fPPfGPWvn9uzTpbtkWQ1\u002BwOGJHIYuE6JfsHKPFA=\u0022"},{"Name":"Last-Modified","Value":"Sun, 22 Mar 2026 12:29:35 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/BarberBooking.WebAPI/AngularApp/Dashboard/DashboardController.323mhj772t.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\AngularApp\Dashboard\DashboardController.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"09s2ubthv8"},{"Name":"integrity","Value":"sha256-fApCbE8MgI6\u002BxkYTD4jjxDPMMsMRHSxDX0zp9RKn3GY="},{"Name":"label","Value":"_content/BarberBooking.WebAPI/AngularApp/Dashboard/DashboardController.js"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"5392"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022fApCbE8MgI6\u002BxkYTD4jjxDPMMsMRHSxDX0zp9RKn3GY=\u0022"},{"Name":"Last-Modified","Value":"Sun, 15 Mar 2026 08:43:41 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"323mhj772t"},{"Name":"integrity","Value":"sha256-BToPbS4L8n6\u002BLTfltrlc39XiyQ\u002BKmWaZ0SD9tqWnSn0="},{"Name":"label","Value":"_content/BarberBooking.WebAPI/AngularApp/Dashboard/DashboardController.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"5946"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022BToPbS4L8n6\u002BLTfltrlc39XiyQ\u002BKmWaZ0SD9tqWnSn0=\u0022"},{"Name":"Last-Modified","Value":"Sun, 22 Mar 2026 12:12:36 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/BarberBooking.WebAPI/AngularApp/Dashboard/DashboardController.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\AngularApp\Dashboard\DashboardController.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-fApCbE8MgI6\u002BxkYTD4jjxDPMMsMRHSxDX0zp9RKn3GY="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"5392"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022fApCbE8MgI6\u002BxkYTD4jjxDPMMsMRHSxDX0zp9RKn3GY=\u0022"},{"Name":"Last-Modified","Value":"Sun, 15 Mar 2026 08:43:41 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-BToPbS4L8n6\u002BLTfltrlc39XiyQ\u002BKmWaZ0SD9tqWnSn0="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"5946"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022BToPbS4L8n6\u002BLTfltrlc39XiyQ\u002BKmWaZ0SD9tqWnSn0=\u0022"},{"Name":"Last-Modified","Value":"Sun, 22 Mar 2026 12:12:36 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/BarberBooking.WebAPI/AngularApp/Login/login-style.9pk0042l0p.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\AngularApp\Login\login-style.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"9pk0042l0p"},{"Name":"integrity","Value":"sha256-M6dnMhUoWXCXTlpTOJ6bmfYrNSCOLz945hcrHupb3N8="},{"Name":"label","Value":"_content/BarberBooking.WebAPI/AngularApp/Login/login-style.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"11062"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022M6dnMhUoWXCXTlpTOJ6bmfYrNSCOLz945hcrHupb3N8=\u0022"},{"Name":"Last-Modified","Value":"Fri, 20 Mar 2026 22:46:00 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/BarberBooking.WebAPI/AngularApp/Login/login-style.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\AngularApp\Login\login-style.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-M6dnMhUoWXCXTlpTOJ6bmfYrNSCOLz945hcrHupb3N8="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"11062"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022M6dnMhUoWXCXTlpTOJ6bmfYrNSCOLz945hcrHupb3N8=\u0022"},{"Name":"Last-Modified","Value":"Fri, 20 Mar 2026 22:46:00 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/BarberBooking.WebAPI/AngularApp/Login/login.html">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\AngularApp\Login\login.html'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-FtLSwigCpd49W\u002BI8mUDgssg6\u002Bd5ZjpFmzrv8lBnUNX8="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"3972"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022FtLSwigCpd49W\u002BI8mUDgssg6\u002Bd5ZjpFmzrv8lBnUNX8=\u0022"},{"Name":"Last-Modified","Value":"Fri, 20 Mar 2026 22:57:41 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/BarberBooking.WebAPI/AngularApp/Login/login.m8yvb6prtr.html">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\AngularApp\Login\login.html'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"m8yvb6prtr"},{"Name":"integrity","Value":"sha256-FtLSwigCpd49W\u002BI8mUDgssg6\u002Bd5ZjpFmzrv8lBnUNX8="},{"Name":"label","Value":"_content/BarberBooking.WebAPI/AngularApp/Login/login.html"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3972"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022FtLSwigCpd49W\u002BI8mUDgssg6\u002Bd5ZjpFmzrv8lBnUNX8=\u0022"},{"Name":"Last-Modified","Value":"Fri, 20 Mar 2026 22:57:41 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/BarberBooking.WebAPI/AngularApp/Login/LoginController.gps3iv5rcz.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\AngularApp\Login\LoginController.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"gps3iv5rcz"},{"Name":"integrity","Value":"sha256-7A2ib/MCpp2zN0RxzcQ6OVthrqXQhpY1P\u002B8nO9g0VwY="},{"Name":"label","Value":"_content/BarberBooking.WebAPI/AngularApp/Login/LoginController.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1353"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00227A2ib/MCpp2zN0RxzcQ6OVthrqXQhpY1P\u002B8nO9g0VwY=\u0022"},{"Name":"Last-Modified","Value":"Fri, 20 Mar 2026 23:02:26 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/BarberBooking.WebAPI/AngularApp/Login/LoginController.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\AngularApp\Login\LoginController.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-7A2ib/MCpp2zN0RxzcQ6OVthrqXQhpY1P\u002B8nO9g0VwY="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1353"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00227A2ib/MCpp2zN0RxzcQ6OVthrqXQhpY1P\u002B8nO9g0VwY=\u0022"},{"Name":"Last-Modified","Value":"Fri, 20 Mar 2026 23:02:26 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
   </ItemGroup>
 </Project>

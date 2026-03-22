@@ -42,6 +42,27 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "BarberBooking.WebAPI.Controllers.BookingController",
+    "Method": "GetPagedBookings",
+    "RelativePath": "api/Booking/getPaged",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "BarberBooking.WebAPI.Controllers.PersonController",
     "Method": "AddPerson",
     "RelativePath": "api/Person",
